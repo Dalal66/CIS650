@@ -1,0 +1,71 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href='/cas/css/cas.css' rel='stylesheet' type='text/css' />
+
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+<link rel="shortcut icon" href="https://cas.iu.edu/cas/images/favicon.ico" />
+<title>Central Authentication Service | Indiana University</title>
+</head>
+<body>
+<div id="identity">
+<div class='wordmark'><a href='http://www.iu.edu' title='Indiana University'></a></div>
+
+</div>
+<div id="bg">
+  <div id="title"></div>
+</div>
+<form name="UserForm" method="POST" action="/cas/EndLogin.do">
+<div id="outerWrapper">
+  <div id="innerWrapper">
+    <h1><span>Central Authentication Service</span></h1>
+    <div id="content">
+      
+      <div id="input">
+        <div id="usernamefield"><label for="username">Username:</label>
+          <input type="hidden" name="uniqueID" value="415e1f87-b7c1-4742-8059-01b75fb88161">
+          <input type="text" id="username" name="userName" value="" class="userpass" />
+        </div>
+        <div id="passphrasefield"><label for="passphrase">Passphrase:</label>
+          <input type="password" id="passphrase" name="password" value="" class="userpass" />
+
+        </div>
+      </div>
+      <input name="btnLogin" id="btnLogin" type="submit" class="btn" value="Login"  />
+	 <div id='help-text'>Trouble signing in? <a href='cas_help.jsp'>We can help</a>.</div>
+
+      <div id="text">
+	  <p>For security reasons, you will need to close your web browser when you finish using services that require authentication.</p>
+      </div>
+
+    </div></div>
+</div>
+</form>
+<script language="JavaScript" type="text/javascript">
+  <!--
+    document.forms["UserForm"].elements["userName"].focus()
+  // -->
+</script>
+
+<div id="footer">
+  <div id="copyright">
+    <div id="blockiu"><a href="http://www.iu.edu" title="Indiana University"></a></div>
+    <div id="statement"><a href="http://www.iu.edu/comments/copyright.shtml" title="Copyright">Copyright</a> &copy;
+      <script type="text/javascript">
+	  var current_date = new Date ( );
+	  document.write ( " " + current_date.getFullYear() );
+      </script>
+      <noscript>2011</noscript>
+
+      The Trustees of <a href="http://www.iu.edu" title="Indiana University">Indiana University</a> &#124; <a href="http://www.iu.edu/comments/complaint.shtml" title="Copyright Complaints">Copyright Complaints</a> </div>
+  </div>
+</div>
+</body>
+</html>
+
